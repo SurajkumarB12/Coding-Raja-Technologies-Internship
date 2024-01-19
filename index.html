@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify-Your favorite music is here</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-72K4FE7wPI5cZ6jz0ov2jnAvrJyUQDhU5P8weANqI5fkiBTn5t4l8DqIAXF8T0kyDwFneZu53bY+UqQ8xNOXudA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li class ="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+      <li>Home</li>
+      <li>About</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="SongLists">
+      <h1>Best of NCS - No Copyright Sounds</h1>
+       <div class="songItemContainer">
+        <div class="songItem">
+          <img src="cover1.jpg" alt="1">
+          <span class="songName">Salaam-E-Ishq</span>
+          <span class="songlistPlay"><span class="timestamp">05:34 <i id="0" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+        <div class="songItem">
+          <img src="cover2.jpg" alt="1">
+          <span class="songName">Ishq Jaisa Kuch</span>
+          <span class="songlistPlay"><span class="timestamp">05:34  <i id="1" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+        <div class="songItem">
+          <img src="cover3.jpg" alt="1">
+          <span class="songName">Chaleya</span>
+          <span class="songlistPlay"><span class="timestamp">05:34  <i id="2" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+        <div class="songItem">
+          <img src="cover4.jpg" alt="1">
+          <span class="songName">O Maahi</span>
+          <span class="songlistPlay"><span class="timestamp">05:34  <i id="3" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+        <div class="songItem">
+          <img src="cover5.jpg"  alt="1">
+          <span class="songName">Lutt Putt Gaye</span>
+          <span class="songlistPlay"><span class="timestamp">05:34  <i id="4" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+        <div class="songItem">
+          <img src="cover6.jpg"  alt="1">
+          <span class="songName">Sher Khul Gaye</span>
+          <span class="songlistPlay"><span class="timestamp">05:34 <i id="5" class="fa-regular  songItemPlay fa-circle-play"></i></span></span>
+        </div>
+       </div>
+    </div>
+    <div class="SongBanner"></div>  
+  </div>
+
+  <div class="bottom">
+      <input type="range" name="range" id="myProgressBar" min="0" value ="0" max="100">
+      <div class="icons">
+        <!-- fontawesome icons -->
+        <i class="fa-solid fa-3x fa-backward-step" id="previous"></i>
+        <i class="fa-regular fa-3x fa-circle-play" id="masterPlay"></i>
+        <i class="fa-solid  fa-3x fa-forward-step" id="next"></i>
+      </div>
+      <div class="songInfo">
+        <img src="playing.gif" width="42px" alt="" id="gif"><span id="masterSongName">Salaam-E-Ishq</span> 
+      </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/dedbfdc323.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
